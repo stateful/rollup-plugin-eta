@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Eta loader plugin for rollup.js",
   "author": "Christian Bromann <christian@stateful.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "homepage": "https://github.com/stateful/rollup-plugin-eta",
   "repository": {
     "type": "git",
