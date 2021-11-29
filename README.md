@@ -1,4 +1,4 @@
-rollup-plugin-eta
+rollup-plugin-eta [![Test Changes](https://github.com/stateful/rollup-plugin-eta/actions/workflows/test.yaml/badge.svg)](https://github.com/stateful/rollup-plugin-eta/actions/workflows/test.yaml)
 =================
 
 [Rollup.js](https://rollupjs.org/guide/en/) template loader plugin for [η (Eta)](https://eta.js.org/). Supports loading of any files with proper Eta content.
@@ -47,7 +47,7 @@ In your app you can then import your template and render its content, e.g.:
 ```javascript
 // main.js
 import tpl from './tpl.eta';
-tpl({ age: 42 });
+console.log(tpl({ age: 42 }));
 ```
 
 If your template file (`tpl.eta`) looks as follows:
@@ -94,7 +94,6 @@ Type: `Object`<br>
 Default: `null`
 
 The default Eta configuration object (`Eta.config`).
-
 
 ## Contribute
 
