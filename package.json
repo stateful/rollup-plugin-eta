@@ -1,0 +1,44 @@
+{
+  "name": "rollup-plugin-eta",
+  "version": "0.0.0",
+  "description": "Eta loader plugin for rollup.js",
+  "author": "Christian Bromann <christian@stateful.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/stateful/rollup-plugin-eta",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stateful/rollup-plugin-eta.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stateful/rollup-plugin-eta/issues"
+  },
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "eta",
+    "template"
+  ],
+  "module": "dist/index.mjs",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "pretest": "npm run build",
+    "prebuild": "rm -rf dist/*",
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "eta": "^1.12.3",
+    "rollup-pluginutils": "^2.8.1"
+  },
+  "peerDependencies": {
+    "rollup": "^2.60.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.2"
+  }
+}
