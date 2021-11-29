@@ -19,7 +19,7 @@
     "template"
   ],
   "type": "module",
-  "module": "dist/index.mjs",
+  "module": "dist/index.js",
   "files": [
     "dist",
     "README.md"
