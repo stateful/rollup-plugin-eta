@@ -18,5 +18,6 @@ export default {
             outDir: 'dist',
             declarationDir: './dist',
         })
-    ]
+    ],
+    external: ['eta']
 };

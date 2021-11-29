@@ -7,8 +7,14 @@ rollup-plugin-eta [![Test Changes](https://github.com/stateful/rollup-plugin-eta
 
 Using NPM:
 
+```sh
+npm install eta rollup-plugin-eta --save-dev
 ```
-npm install rollup-plugin-eta --save
+
+or Yarn:
+
+```sh
+yarn add --dev eta rollup-plugin-eta
 ```
 
 ## Usage
