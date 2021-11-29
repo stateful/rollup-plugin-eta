@@ -8,5 +8,5 @@ npm-debug.log*
 node_modules
 
 # WebStorm project files
-.idea
+*.tgz
 dist
