@@ -60,7 +60,7 @@ Then, your compiled file would return:
 
 ```sh
 $ node ./dist/main.js
-<p>Hello 👋 , my name is John Doe and I am 42 year old ✨</
+<p>Hello 👋 , my name is John Doe and I am 42 year old ✨</p>
 ```
 
 ## Options
