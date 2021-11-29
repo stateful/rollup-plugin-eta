@@ -28,6 +28,11 @@
     "build": "rollup -c",
     "pretest": "npm run build",
     "prebuild": "rm -rf dist/*",
+    "release": "release-it --github.release --verbose",
+    "release:ci": "npm run release -- --ci --npm.skipChecks --no-git.requireCleanWorkingDir",
+    "release:patch": "npm run release -- patch",
+    "release:minor": "npm run release -- minor",
+    "release:major": "npm run release -- major",
     "test": "run-s test:*",
     "test:setup": "cd example && npx rollup -c rollup.config.js && cd ..",
     "test:run": "node ./test/test.js"
@@ -40,6 +45,7 @@
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
     "npm-run-all": "^4.1.5",
+    "release-it": "^14.11.8",
     "rollup": "^2.60.1",
     "tslib": "^2.3.1",
     "typescript": "^4.5.2"
