@@ -19,11 +19,14 @@
     "template"
   ],
   "type": "module",
-  "module": "dist/index.js",
+  "exports": "./dist/index.js",
   "files": [
     "dist",
     "README.md"
   ],
+  "engines": {
+    "node": "^12.22 || ^14.13 || >=16"
+  },
   "scripts": {
     "build": "rollup -c",
     "pretest": "npm run build",
