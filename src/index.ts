@@ -17,6 +17,22 @@ const defaultPluginOptions: Required<PluginOptions> = {
     etaConfig: etaDefaultConfig
 }
 
+const ETA_UTILS = `
+const escMap = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+}
+
+function replaceChar(s) {
+    return escMap[s]
+}
+
+class EtaErr extends Error {}
+\n\n`
+
 export default (config: PluginOptions = {}): Plugin => {
     const { include, exclude, data, etaConfig } = Object.assign({}, defaultPluginOptions, config)
     const filter = createFilter(include, exclude);
@@ -28,7 +44,8 @@ export default (config: PluginOptions = {}): Plugin => {
             if (filter(tplFilePath)) {
                 const templateFn = compile(code, etaConfig)
                 return {
-                    code: `export default (data) => (${templateFn.toString()})({
+                    code: `${ETA_UTILS}
+                    export default (data) => (${templateFn.toString()})({
                         ...${JSON.stringify(data)},
                         ...data
                     }, {

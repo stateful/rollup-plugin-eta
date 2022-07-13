@@ -3,12 +3,10 @@ import resolve from '@rollup/plugin-node-resolve';
 
 export default {
     input: 'app/index.js',
-    output: [
-        {
-            dir: 'dist',
-            format: 'esm'
-        },
-    ],
+    output: [{
+        dir: 'dist',
+        format: 'es'
+    }],
     plugins: [
         resolve(),
         eta({

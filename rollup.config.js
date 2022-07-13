@@ -5,12 +5,10 @@ const extensions = ['.js', '.ts'];
 
 export default {
     input: 'src/index.ts',
-    output: [
-        {
-            dir: 'dist',
-            format: 'esm'
-        },
-    ],
+    output: [{
+        dir: 'dist',
+        format: 'es'
+    }],
     plugins: [
         resolve({ extensions }),
         typescript({

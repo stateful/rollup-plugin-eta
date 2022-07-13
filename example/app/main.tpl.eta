@@ -1,1 +1,2 @@
 <p>Hello 👋 , my name is <%= it.name %> and I am <%= it.age %> year old ✨</p>
+<%= it.someHTML %>
