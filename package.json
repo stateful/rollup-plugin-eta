@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-eta",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "Eta loader plugin for rollup.js",
   "author": "Christian Bromann <christian@stateful.com>",
   "license": "Apache-2.0",
